@@ -1,5 +1,9 @@
 <div>
-  <h1>{{title}}</h1>
-  <img [src]="imgUrl" alt="The BridgeLabz logo: a Bridge to Employment through a Lab works.">
+  <h1>Hello {{userName}} BridgeLabz</h1>
+  <img [src]="imgUrl" (click)="onClick($event)" alt="The BridgeLabz logo: a Bridge to Employment through a Lab works.">
+</div>
+
+<div>
+  <input [(ngModel)] = "userName"/><br>
 </div>
 <router-outlet></router-outlet>
